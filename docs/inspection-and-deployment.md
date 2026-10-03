@@ -35,10 +35,15 @@ Copy this template into a separate Markdown file named for the item ID when insp
 | Power verification | |
 | Installed hardware or firmware | |
 | Power-on result | |
-| Functional tests and results | |
+| Test objective and procedure | |
+| Expected result | |
+| Observed result and pass/fail status | |
+| Limitations or failed tests | |
 | Reset needed and reason | |
 | Reset performed and result | |
 | Setup and configuration | |
+| Configuration decisions and rationale | |
+| Recovery or rollback plan (sanitized) | |
 | Planned use | |
 | Actual use | |
 | Related project | |
