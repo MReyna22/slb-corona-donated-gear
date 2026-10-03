@@ -1,0 +1,11 @@
+# Private source material and local working files
+private/
+raw-photos/
+config-backups/
+.env
+.env.*
+*.pem
+*.key
+Thumbs.db
+.DS_Store
+
