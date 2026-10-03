@@ -3,7 +3,7 @@
 Hardware inventory and deployment documentation for my IT and cybersecurity home lab. This repository tracks equipment donated by Antonio Corona from initial identification through inspection, configuration, testing, and assignment to projects.
 
 **Maintainer:** [Misael Reyna](https://github.com/MReyna22)  
-**Status:** Initial inventory recorded; hardware inspection and deployment pending  
+**Status:** Initial inventory recorded; PC-001 BIOS baseline documented; validation and deployment pending  
 **Inventory baseline:** October 3, 2026 · 19 individual entries
 
 ## Project purpose
@@ -16,8 +16,9 @@ This repository is the central inventory and donor acknowledgment. Technical imp
 
 | Document | What it contains |
 |---|---|
-| [Hardware inventory](inventory/2026-10-03-inventory.csv) | Device IDs, models, power requirements, planned use, actual use, and test status |
+| [Hardware inventory](inventory/2026-10-03-inventory-r2.csv) | Device IDs, models, power requirements, planned use, actual use, and test status |
 | [Inventory maintenance](inventory/README.md) | Source limitations, stable IDs, and snapshot update process |
+| [PC-001 inspection record](docs/devices/PC-001.md) | Confirmed OptiPlex hardware, BIOS settings, validation status, and next checks |
 | [Equipment needs](docs/equipment-needs.md) | Supporting power and cabling requirements, current availability, and selection criteria |
 | [Project roadmap](docs/projects.md) | Candidate equipment, related repositories, dependencies, and next milestones |
 | [Inspection and deployment](docs/inspection-and-deployment.md) | Baseline checks, reset decisions, configuration records, and validation requirements |
@@ -31,7 +32,7 @@ The initial inventory contains four wireless access points, three switches, two 
 |---|---|---|
 | Identification and inventory | Initial baseline recorded | Dated inventory snapshot with 19 unique item IDs |
 | Physical inspection and power verification | Pending | Per-device condition, interfaces, accessories, and compatible power source |
-| Hardware and firmware assessment | Pending | Installed specifications, firmware or BIOS versions, and management state |
+| Hardware and firmware assessment | PC-001 BIOS baseline recorded; remaining assessments pending | Installed specifications, firmware or BIOS versions, and management state |
 | Reset and configuration | Pending; reset only where needed | Reset rationale, configuration decisions, and recovery information |
 | Functional validation | Pending | Test procedure, expected result, observed result, and sanitized evidence |
 | Project deployment | Pending | Confirmed item IDs, actual use, and links to implementation records |
