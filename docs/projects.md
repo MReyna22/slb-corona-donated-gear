@@ -1,4 +1,4 @@
-# Project plans
+# Project roadmap
 
 These are planned uses of the donated equipment. They do not claim that the gear has been deployed.
 
@@ -24,7 +24,15 @@ The R36S itself is an existing project device and is not part of the 19-item don
 
 When a project uses this gear, add an acknowledgment linking to the root of this repository and list the item IDs it uses. Link only to evidence and repositories that exist. A project plan becomes actual use after installation and testing are documented.
 
-Example wording:
+### Project dedication
+
+For ongoing or future projects, use a brief dedication that links to the full message here:
+
+> Dedicated to Antonio Corona, whose support helped me turn continued learning into hands-on IT and cybersecurity projects. Read the [dedication and donation record](https://github.com/MReyna22/slb-corona-donated-gear#dedication-to-antonio-corona).
+
+### Equipment acknowledgment
+
+When a project uses donated equipment:
 
 > This project uses equipment donated by Antonio Corona. The donation inventory and acknowledgment are maintained in [SLB Corona Donated Gear](https://github.com/MReyna22/slb-corona-donated-gear). Equipment used: list the confirmed item IDs.
 
