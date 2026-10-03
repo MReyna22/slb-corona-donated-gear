@@ -18,6 +18,7 @@ This repository is the central inventory and donor acknowledgment. Technical imp
 |---|---|
 | [Hardware inventory](inventory/2026-10-03-inventory.csv) | Device IDs, models, power requirements, planned use, actual use, and test status |
 | [Inventory maintenance](inventory/README.md) | Source limitations, stable IDs, and snapshot update process |
+| [Equipment needs](docs/equipment-needs.md) | Supporting power and cabling requirements, current availability, and selection criteria |
 | [Project roadmap](docs/projects.md) | Candidate equipment, related repositories, dependencies, and next milestones |
 | [Inspection and deployment](docs/inspection-and-deployment.md) | Baseline checks, reset decisions, configuration records, and validation requirements |
 | [Change log](CHANGELOG.md) | Significant inventory and documentation changes |
