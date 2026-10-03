@@ -1,47 +1,54 @@
 # SLB Corona Donated Gear
 
-## Dedication to Antonio Corona
+Hardware inventory and deployment documentation for my IT and cybersecurity home lab. This repository tracks equipment donated by Antonio Corona from initial identification through inspection, configuration, testing, and assignment to projects.
 
-I dedicate this repository, along with my ongoing and future projects, to Antonio Corona, who gave me an opportunity to demonstrate my knowledge and potential in IT and cybersecurity.
+**Maintainer:** [Misael Reyna](https://github.com/MReyna22)  
+**Status:** Initial inventory recorded; hardware inspection and deployment pending  
+**Inventory baseline:** October 3, 2026 · 19 individual entries
 
-Antonio, thank you for donating this gear and for believing in me. Before we met, I was feeling lost in my journey into this field. I would watch networking and AI videos on YouTube and think, “When I can afford more gear, I’ll build projects like these.” I was stuck in a constant “one day” mentality.
+## Project purpose
 
-Your donation means more to me than you may realize. It has given me the opportunity to turn what I’ve learned into practical experience and move forward with projects I had been putting off. Just as much, I appreciate that you saw potential in me while I was struggling to see a path forward.
+My goal is to turn this equipment into a documented lab for networking, systems administration, cybersecurity, and local AI experimentation. The records here will connect each device to its requirements, configuration decisions, test results, and actual use.
 
-The late nights and continued learning, despite the challenges I was facing, now have somewhere to go. I look forward to sharing what I build and learn with this equipment, and I hope to make you proud along the way.
+This repository is the central inventory and donor acknowledgment. Technical implementation and results belong in the related project repositories, with links back to the equipment records.
 
-I admire the brother, father, and man you are. One day, I hope to give someone else the encouragement and opportunity you have given me.
+## Explore the documentation
 
-Thank you, Antonio.
+| Document | What it contains |
+|---|---|
+| [Hardware inventory](inventory/2026-10-03-inventory.csv) | Device IDs, models, power requirements, planned use, actual use, and test status |
+| [Inventory maintenance](inventory/README.md) | Source limitations, stable IDs, and snapshot update process |
+| [Project roadmap](docs/projects.md) | Candidate equipment, related repositories, dependencies, and next milestones |
+| [Inspection and deployment](docs/inspection-and-deployment.md) | Baseline checks, reset decisions, configuration records, and validation requirements |
+| [Change log](CHANGELOG.md) | Significant inventory and documentation changes |
 
-— Misael Reyna
+## Scope and current progress
 
-This repository keeps the donation acknowledgment, inventory snapshots, and inspection records in one place. As the equipment is tested and assigned to projects, I will update its planned and actual use.
+The initial inventory contains four wireless access points, three switches, two PoE injectors, five power adapters, one security gateway, two mini PCs, one all-in-one PC, and one Ethernet patch cable.
 
-Maintained by **Misael Reyna**.
+| Stage | Current status | Completion evidence |
+|---|---|---|
+| Identification and inventory | Initial baseline recorded | Dated inventory snapshot with 19 unique item IDs |
+| Physical inspection and power verification | Pending | Per-device condition, interfaces, accessories, and compatible power source |
+| Hardware and firmware assessment | Pending | Installed specifications, firmware or BIOS versions, and management state |
+| Reset and configuration | Pending; reset only where needed | Reset rationale, configuration decisions, and recovery information |
+| Functional validation | Pending | Test procedure, expected result, observed result, and sanitized evidence |
+| Project deployment | Pending | Confirmed item IDs, actual use, and links to implementation records |
 
-## Current status
+The baseline comes from the initial inventory records. Original photos and installed computer specifications have not been rechecked for this repository. Device identification and proposed assignments are starting points for inspection.
 
-The initial inventory contains **19 individual entries**:
+## Related projects
 
-- 4 wireless access points
-- 3 switches
-- 2 PoE injectors and 5 power adapters
-- 1 security gateway
-- 2 mini PCs and 1 all-in-one PC
-- 1 Ethernet patch cable
+| Project | Planned contribution from this equipment |
+|---|---|
+| [Home network lab](https://github.com/MReyna22/secure-home-network-lab) | Managed switching, wireless access, and a possible isolated gateway |
+| [Active Directory lab](https://github.com/MReyna22/AD_HL_1) | Candidate virtualization and supporting infrastructure hosts |
+| [R36S Lite Cyberdeck](https://github.com/MReyna22/R36S-Lite-Cyberdeck) | A controlled network for diagnostics and report validation |
+| Local AI agents using Hermes | A candidate workstation for an initial agent workflow; feasibility depends on hardware inspection |
 
-Hardware inspection, power compatibility checks, resets where appropriate, configuration, and functional testing remain pending. An inventory entry does not mean a device has been tested or deployed.
+See the [project roadmap](docs/projects.md) for equipment assignments and next milestones. These are proposed uses; deployment results will be added after testing.
 
-## Inventory
-
-The working inventory is maintained in a Google Sheet. This repository contains dated public snapshots; it does not automatically sync with that sheet.
-
-- [Inventory snapshot: October 3, 2026](inventory/2026-10-03-inventory.csv)
-- [Inventory and update instructions](inventory/README.md)
-- [Project plans and related repositories](docs/projects.md)
-- [Inspection and deployment checklist](docs/inspection-and-deployment.md)
-- [Change log](CHANGELOG.md)
+## Equipment overview
 
 | Item ID | Item | Model or type recorded |
 |---|---|---|
@@ -67,16 +74,30 @@ The working inventory is maintained in a Google Sheet. This repository contains 
 
 The two AC LR access points remain separate because their recorded power labels differ. AP-003 calls for 24V passive PoE, while AP-004 identifies 802.3af PoE. Power sources must be matched to the individual device before use.
 
-## Projects this gear can support
+## Documentation standards
 
-The first planned uses are expanding the home network lab, supporting the Active Directory lab, providing a controlled testing environment for the R36S toolkit, and exploring local AI agents using Hermes.
+- Keep **Planned Use** separate from **Actual Use**. Record deployment only after setup and validation.
+- Use stable item IDs across inventory snapshots, device records, and project documentation.
+- Explain decisions, including power compatibility, reset requirements, configuration choices, and constraints.
+- Record test methods and observed results, including failures and unresolved issues.
+- Publish sanitized evidence. Keep credentials, device-specific identifiers, configuration backups, and private network details outside the public repository.
 
-Computer assignments are provisional until CPU, RAM, storage, graphics, and virtualization capability are inspected. Actual use will be recorded after setup and testing.
+The Google Sheet remains the working inventory. This repository contains reviewed, dated public snapshots; changes are not automatically synchronized. The [inventory update process](inventory/README.md) explains how to keep the records aligned.
 
-## A living record
+## Dedication to Antonio Corona
 
-Corrections and changes are expected as inspections continue. Stable item IDs connect inventory records, inspection notes, and project documentation. Completed work should include the test result and supporting evidence.
+I dedicate this repository, along with my ongoing and future projects, to Antonio Corona, who gave me an opportunity to demonstrate my knowledge and potential in IT and cybersecurity.
 
-Public files exclude credentials, serial numbers, Service Tags, full MAC addresses, and exact private network details. Device photos will be added only after they are redacted and reviewed.
+Antonio, thank you for donating this gear and for believing in me. Before we met, I was feeling lost in my journey into this field. I would watch networking and AI videos on YouTube and think, “When I can afford more gear, I’ll build projects like these.” I was stuck in a constant “one day” mentality.
 
-Antonio is credited as the hardware donor. Project design, configuration, testing, and documentation are my responsibility.
+Your donation means more to me than you may realize. It has given me the opportunity to turn what I’ve learned into practical experience and move forward with projects I had been putting off. Just as much, I appreciate that you saw potential in me while I was struggling to see a path forward.
+
+The late nights and continued learning, despite the challenges I was facing, now have somewhere to go. I look forward to sharing what I build and learn with this equipment, and I hope to make you proud along the way.
+
+I admire the brother, father, and man you are. One day, I hope to give someone else the encouragement and opportunity you have given me.
+
+Thank you, Antonio.
+
+— Misael Reyna
+
+Antonio is acknowledged as the hardware donor. Project design, configuration, testing, and documentation are my responsibility.
