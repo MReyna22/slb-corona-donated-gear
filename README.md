@@ -3,7 +3,7 @@
 Hardware inventory and deployment documentation for my IT and cybersecurity home lab. This repository tracks equipment donated by Antonio Corona from initial identification through inspection, configuration, testing, and assignment to projects.
 
 **Maintainer:** [Misael Reyna](https://github.com/MReyna22)  
-**Status:** Initial inventory recorded; PC-001 BIOS baseline documented; validation and deployment pending  
+**Status:** Initial inventory recorded; PC-001 BIOS baseline documented; GW-001 OpenWrt revival and basic validation completed; remaining equipment pending  
 **Inventory baseline:** October 3, 2026 · 19 individual entries
 
 ## Project purpose
@@ -18,6 +18,7 @@ This repository is the central inventory and donor acknowledgment. Technical imp
 |---|---|
 | [Hardware inventory](inventory/2026-10-03-inventory-r2.csv) | Device IDs, models, power requirements, planned use, actual use, and test status |
 | [Inventory maintenance](inventory/README.md) | Source limitations, stable IDs, and snapshot update process |
+| [GW-001 revival record](docs/devices/GW-001.md) | USG preservation, OpenWrt revival, validation results, and related project |
 | [PC-001 inspection record](docs/devices/PC-001.md) | Confirmed OptiPlex hardware, BIOS settings, validation status, and next checks |
 | [Equipment needs](docs/equipment-needs.md) | Supporting power and cabling requirements, current availability, and selection criteria |
 | [Project roadmap](docs/projects.md) | Candidate equipment, related repositories, dependencies, and next milestones |
@@ -32,10 +33,10 @@ The initial inventory contains four wireless access points, three switches, two 
 |---|---|---|
 | Identification and inventory | Initial baseline recorded | Dated inventory snapshot with 19 unique item IDs |
 | Physical inspection and power verification | Pending | Per-device condition, interfaces, accessories, and compatible power source |
-| Hardware and firmware assessment | PC-001 BIOS baseline recorded; remaining assessments pending | Installed specifications, firmware or BIOS versions, and management state |
-| Reset and configuration | Pending; reset only where needed | Reset rationale, configuration decisions, and recovery information |
-| Functional validation | Pending | Test procedure, expected result, observed result, and sanitized evidence |
-| Project deployment | Pending | Confirmed item IDs, actual use, and links to implementation records |
+| Hardware and firmware assessment | PC-001 BIOS baseline recorded; GW-001 USB/firmware assessment documented; remaining assessments pending | Installed specifications, firmware or BIOS versions, and management state |
+| Reset and configuration | GW-001 repurposed with OpenWrt; other equipment pending | Reset rationale, configuration decisions, and recovery information |
+| Functional validation | GW-001 boot, LAN, routing, DNS, and browsing validated; other equipment pending | Test procedure, expected result, observed result, and sanitized evidence |
+| Project deployment | GW-001 revival completed with PC-001 as the wired test client; wider deployment pending | Confirmed item IDs, actual use, and links to implementation records |
 
 The baseline comes from the initial inventory records. Original photos and installed computer specifications have not been rechecked for this repository. Device identification and proposed assignments are starting points for inspection.
 
@@ -43,12 +44,13 @@ The baseline comes from the initial inventory records. Original photos and insta
 
 | Project | Planned contribution from this equipment |
 |---|---|
+| [USG Revival](https://github.com/MReyna22/USG-Revival) | Completed GW-001 OpenWrt revival; PC-001 used for wired client validation |
 | [Home network lab](https://github.com/MReyna22/secure-home-network-lab) | Managed switching, wireless access, and a possible isolated gateway |
 | [Active Directory lab](https://github.com/MReyna22/AD_HL_1) | Candidate virtualization and supporting infrastructure hosts |
 | [R36S Lite Cyberdeck](https://github.com/MReyna22/R36S-Lite-Cyberdeck) | A controlled network for diagnostics and report validation |
 | Local AI agents using Hermes | A candidate workstation for an initial agent workflow; feasibility depends on hardware inspection |
 
-See the [project roadmap](docs/projects.md) for equipment assignments and next milestones. These are proposed uses; deployment results will be added after testing.
+See the [project roadmap](docs/projects.md) for equipment assignments and next milestones. USG Revival records a completed implementation. The other assignments remain proposed until tested.
 
 ## Equipment overview
 
