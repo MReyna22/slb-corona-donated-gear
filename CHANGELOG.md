@@ -2,6 +2,9 @@
 
 ## 2026-10-05
 
+- Recorded PC-001's Dell DW1810 wireless card and Toshiba KBG40ZNS128G 128 GB SSD from hardware labels; documented the fan/air shroud and empty 2.5-inch drive caddy. Published two sanitized physical-inspection photographs. No new operational tests, upgrades, or completed reassembly were claimed.
+- Published an October 5 inventory revision 2 containing the new hardware-label observations while preserving previous snapshots.
+
 - Reconciled the working inventory and public documentation with completed PC-001 and GW-001 progress; published a new dated snapshot without modifying the October 3 baseline files.
 - Recorded PC-001 Windows 11 setup/update completion and Wi-Fi functionality as operator-confirmed, and linked retained USG management, Internet reachability, and DNS evidence.
 - Recovered and published two PC-001 BIOS photographs with permanent device-identifier redactions, metadata removal, captions, and SHA-256 hashes. Other BIOS views remain unrecovered.

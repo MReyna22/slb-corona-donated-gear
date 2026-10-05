@@ -4,7 +4,7 @@ Hardware inventory and deployment documentation for my IT and cybersecurity home
 
 **Maintainer:** [Misael Reyna](https://github.com/MReyna22)  
 **Status:** PC-001 initial setup complete by operator confirmation; GW-001 OpenWrt revival and basic validation completed; remaining equipment pending  
-**Current inventory snapshot:** October 5, 2026 · 19 individual entries  
+**Current inventory snapshot:** October 5, 2026 · revision 2 · 19 individual entries  
 **Original inventory baseline:** October 3, 2026
 
 ## Project purpose
@@ -17,7 +17,7 @@ This repository is the central inventory and donor acknowledgment. Technical imp
 
 | Document | What it contains |
 |---|---|
-| [Hardware inventory](inventory/2026-10-05-inventory.csv) | Device IDs, models, power requirements, planned use, actual use, and test status |
+| [Hardware inventory](inventory/2026-10-05-inventory-r2.csv) | Device IDs, models, power requirements, planned use, actual use, and test status |
 | [Inventory maintenance](inventory/README.md) | Source limitations, stable IDs, and snapshot update process |
 | [GW-001 revival record](docs/devices/GW-001.md) | USG preservation, OpenWrt revival, validation results, and related project |
 | [PC-001 setup record](docs/devices/PC-001.md) | OptiPlex hardware, completed setup, retained network evidence, and remaining evidence gaps |

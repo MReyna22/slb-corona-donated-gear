@@ -2,7 +2,7 @@
 
 The Google Sheet is the working inventory. These CSV files are dated public snapshots so changes can be reviewed in Git.
 
-The current snapshot is [2026-10-05-inventory.csv](2026-10-05-inventory.csv), reconciled from the working sheet on October 5, 2026. It contains 37 working-inventory columns and 19 unique item IDs. Earlier 20-column snapshots remain unchanged as historical baselines.
+The current snapshot is [2026-10-05-inventory-r2.csv](2026-10-05-inventory-r2.csv), reconciled from the working sheet on October 5, 2026. Revision 2 adds the photographed Dell DW1810 wireless card, Toshiba KBG40ZNS128G 128 GB SSD, and empty 2.5-inch drive caddy. The earlier October 5 snapshot also remains unchanged. It contains 37 working-inventory columns and 19 unique item IDs. Earlier 20-column snapshots remain unchanged as historical baselines.
 
 The initial snapshot contains 19 entries, one row per physical device or inventoried cable. Item IDs stay the same when equipment moves or changes purpose.
 
@@ -21,7 +21,7 @@ A blank, TBD, Pending, Not recorded, Not reported, or Not tested value indicates
 
 The October 3 baseline combines the AP inventory and the equipment recorded in the Identify Device Capabilities chat. Model names, label text, and proposed uses are retained from those records.
 
-The October 5 snapshot updates PC-001 and GW-001 from subsequent project evidence and operator confirmations. PC-001 Windows 11 setup, current Windows updates, and Wi-Fi functionality are operator-confirmed; the corresponding Windows/Wi-Fi screenshots have not been archived. Two BIOS photographs were recovered, permanently redacted, and published with the [PC-001 device record](../docs/devices/PC-001.md). Other BIOS settings remain earlier transcriptions. Ethernet ping/DNS and USG status screenshots are linked to the public [USG Revival](https://github.com/MReyna22/USG-Revival) evidence.
+The October 5 snapshot updates PC-001 and GW-001 from subsequent project evidence and operator confirmations. PC-001 Windows 11 setup, current Windows updates, and Wi-Fi functionality are operator-confirmed; the corresponding Windows/Wi-Fi screenshots have not been archived. Two BIOS photographs were recovered, permanently redacted, and published with the [PC-001 device record](../docs/devices/PC-001.md). Other BIOS settings remain earlier transcriptions. Two additional redacted component photographs show the cooling shroud/empty caddy and wireless/SSD labels; published manufacturer capabilities are distinguished from observed tests. Ethernet ping/DNS and USG status screenshots are linked to the public [USG Revival](https://github.com/MReyna22/USG-Revival) evidence.
 
 GW-001 revival and basic bench validation are complete. Throughput, sustained stability, inbound firewall enforcement, and backup restoration remain untested. Other device rows retain their prior status. Planned VM roles remain separate from actual Windows client use.
 
