@@ -2,6 +2,9 @@
 
 ## 2026-10-05
 
+- Added the PC-002 device record and two sanitized internal-component photographs. Recorded two populated SO-DIMMs, the Seagate ST500LM021 500 GB / 7200 RPM SATA drive, Intel Dual Band Wireless-AC 7260 / 7260HMW label, cooling assembly, and coin cell. RAM capacity and startup/BIOS/OS/health/network tests remain pending; a DisplayPort cable was not available.
+- Published October 5 inventory revision 3 with PC-002's physical observations and pending DisplayPort connection; earlier snapshots remain unchanged.
+
 - Recorded PC-001's Dell DW1810 wireless card and Toshiba KBG40ZNS128G 128 GB SSD from hardware labels; documented the fan/air shroud and empty 2.5-inch drive caddy. Published two sanitized physical-inspection photographs. No new operational tests, upgrades, or completed reassembly were claimed.
 - Published an October 5 inventory revision 2 containing the new hardware-label observations while preserving previous snapshots.
 
