@@ -1,0 +1,271 @@
+{
+  "equipment_id": "PC-001",
+  "source_context": "Eight user-supplied screenshots retrieved from Silent Photo Transfer; filename capture date October 5, 2026. No new tests were executed during this archival review.",
+  "images": [
+    {
+      "source_filename": "Screenshot 2026-10-05 211943.png",
+      "source_sha256": "18b5447ba5b99fea3674525d4b9782493494a27657e7a1891f75f19709933e71",
+      "public_asset": "docs/devices/assets/PC-001/pc001-example-com-browser.png",
+      "public_sha256": "c3968a24003bdce355589e69eaec20b1d83e0cf1e760a3d80b9fd6cd64820e4a",
+      "public_bytes": 116276,
+      "original_and_public_dimensions": [
+        1914,
+        1071
+      ],
+      "caption": "Microsoft Edge displays example.com with https://example.com in the address bar. This records a successful page display at capture time; the browser image alone does not identify the active network adapter or establish a broader TLS/security audit.",
+      "redacted_fields": [
+        "Browser profile icon"
+      ],
+      "opaque_black_rectangles_xyxy": [
+        [
+          1767,
+          32,
+          1804,
+          67
+        ]
+      ],
+      "metadata_removed": true,
+      "resized": false,
+      "pixels_outside_rectangles_unchanged": true,
+      "private_original_preserved": true
+    },
+    {
+      "source_filename": "Screenshot 2026-10-05 211843.png",
+      "source_sha256": "e1c784778087487202baa9c6562a2d412c089d92a8d02d7f61cd824638aeea1d",
+      "public_asset": "docs/devices/assets/PC-001/pc001-wifi-connectivity-ping-and-dns.png",
+      "public_sha256": "4122b68a2d670e12eab04dd96e940cd9b0386e2d5187035369c9a7d1a9edf607",
+      "public_bytes": 66892,
+      "original_and_public_dimensions": [
+        959,
+        975
+      ],
+      "caption": "PC-001 Qualcomm QCA9377 802.11ac Wireless Adapter is Up while Ethernet is Disconnected. The active Wi-Fi connection reports 802.11n, 2.4 GHz, WPA2-Personal/CCMP, and 72.2 Mbps receive/transmit link rates. Four ping replies from 1.1.1.1 show zero loss, with minimum/average/maximum 12/13/14 ms. example.com DNS resolution returns A and AAAA answers. Link rate is not measured throughput; AAAA answers do not prove public IPv6 connectivity.",
+      "redacted_fields": [
+        "Wireless interface GUID",
+        "Wireless physical MAC",
+        "SSID",
+        "AP BSSID",
+        "Wireless profile name",
+        "Private IPv4 DNS server address"
+      ],
+      "opaque_black_rectangles_xyxy": [
+        [
+          231,
+          212,
+          532,
+          229
+        ],
+        [
+          231,
+          229,
+          380,
+          245
+        ],
+        [
+          231,
+          276,
+          299,
+          293
+        ],
+        [
+          231,
+          292,
+          380,
+          309
+        ],
+        [
+          231,
+          500,
+          299,
+          518
+        ],
+        [
+          79,
+          805,
+          175,
+          822
+        ]
+      ],
+      "metadata_removed": true,
+      "resized": false,
+      "pixels_outside_rectangles_unchanged": true,
+      "private_original_preserved": true
+    },
+    {
+      "source_filename": "Screenshot 2026-10-05 211716.png",
+      "source_sha256": "995ba2f898fbfaba4de9f59b1152a5082b4154b948ee6b697606a18daa2b1836",
+      "public_asset": "docs/devices/assets/PC-001/pc001-wifi-adapter-and-link-details.png",
+      "public_sha256": "15603fa85be4db9241098f418eaf52123cac018be22859f1fafa81d739d6218a",
+      "public_bytes": 46151,
+      "original_and_public_dimensions": [
+        955,
+        655
+      ],
+      "caption": "Earlier Wi-Fi adapter/netsh view shows the same Qualcomm QCA9377 wireless adapter Up, Ethernet Disconnected, and an active 802.11n connection at 2.4 GHz with reported 72.2 Mbps receive/transmit link rates. This overlaps the adapter/link content in the later combined Wi-Fi/ping/DNS screenshot; it is not a second independent performance test.",
+      "redacted_fields": [
+        "Wireless interface GUID",
+        "Wireless physical MAC",
+        "SSID",
+        "AP BSSID",
+        "Wireless profile name"
+      ],
+      "opaque_black_rectangles_xyxy": [
+        [
+          225,
+          234,
+          530,
+          253
+        ],
+        [
+          225,
+          251,
+          379,
+          269
+        ],
+        [
+          225,
+          299,
+          299,
+          317
+        ],
+        [
+          225,
+          315,
+          379,
+          333
+        ],
+        [
+          225,
+          523,
+          299,
+          541
+        ]
+      ],
+      "metadata_removed": true,
+      "resized": false,
+      "pixels_outside_rectangles_unchanged": true,
+      "private_original_preserved": true,
+      "content_overlap_with": "docs/devices/assets/PC-001/pc001-wifi-connectivity-ping-and-dns.png",
+      "relation": "Earlier adapter/link-only view; content subset of the later combined screenshot, not a byte-identical duplicate."
+    },
+    {
+      "source_filename": "Screenshot 2026-10-05 210829.png",
+      "source_sha256": "e99771b3fc8fa0a379bade39fcafd20d7533302ee86e992dbf9338dc05471d78",
+      "public_asset": "docs/devices/assets/PC-001/pc001-ethernet-connectivity-ping-and-dns.png",
+      "public_sha256": "aa1b8c042e5c1d8ea7b332ac416b0a796cca1068975ba91a53be0e5ae6918fe2",
+      "public_bytes": 64397,
+      "original_and_public_dimensions": [
+        1109,
+        677
+      ],
+      "caption": "Ethernet is Up at a reported 1 Gbps link rate while Wi-Fi and Bluetooth Network Connection 2 are Disconnected. Four ping replies from 1.1.1.1 show zero loss, with minimum/average/maximum 12/13/16 ms. example.com resolves through USG-Revival.lan with A and AAAA answers. This establishes the displayed wired adapter state and basic reachability/DNS result, not 1 Gbps routed throughput or public IPv6 connectivity.",
+      "redacted_fields": [
+        "Unique local IPv6 DNS server address"
+      ],
+      "opaque_black_rectangles_xyxy": [
+        [
+          90,
+          481,
+          264,
+          503
+        ]
+      ],
+      "metadata_removed": true,
+      "resized": false,
+      "pixels_outside_rectangles_unchanged": true,
+      "private_original_preserved": true
+    },
+    {
+      "source_filename": "Screenshot 2026-10-05 210319.png",
+      "source_sha256": "f6453b3362a01aadd49e437253ff37fa410b60e1c13ff729b19bcf52a2563387",
+      "public_asset": "docs/devices/assets/PC-001/pc001-windows-storage-status.png",
+      "public_sha256": "5ff9d2931635c064892013413a43a067af4ca4dd680ec4f2845ca5af7c610185",
+      "public_bytes": 60587,
+      "original_and_public_dimensions": [
+        1114,
+        622
+      ],
+      "caption": "Windows Get-PhysicalDisk lists the Toshiba KBG40ZNS128G NVMe 128 GB SSD as Healthy and OperationalStatus OK, displaying 119.2 in the script SizeGB column. Volume C is Healthy and displays size 118.2 and free space 75.6. Because the commands divide byte counts by PowerShell 1GB, these numerical capacities are GiB despite the column names. This is Windows-reported status, not a comprehensive SMART, surface, endurance, or performance test.",
+      "redacted_fields": [],
+      "opaque_black_rectangles_xyxy": [],
+      "metadata_removed": true,
+      "resized": false,
+      "pixels_outside_rectangles_unchanged": true,
+      "private_original_preserved": true
+    },
+    {
+      "source_filename": "Screenshot 2026-10-05 204956.png",
+      "source_sha256": "501e5a08a8e56c3e0993804f95483962ae6b8c2dafe654aba1fc331154e52a56",
+      "public_asset": "docs/devices/assets/PC-001/pc001-windows-memory-status.png",
+      "public_sha256": "68a27ce2ebf22b1e340c5d5157497cb2f58ad0f6106256b13488af776bb87385",
+      "public_bytes": 32179,
+      "original_and_public_dimensions": [
+        758,
+        578
+      ],
+      "caption": "Task Manager Memory reports 8.0 GB DDR4, 2666 MT/s, SO-DIMM form factor, one of two slots used, and 191 MB hardware reserved. The displayed usage is a capture-time snapshot; no sustained memory test or upgrade is established.",
+      "redacted_fields": [],
+      "opaque_black_rectangles_xyxy": [],
+      "metadata_removed": true,
+      "resized": false,
+      "pixels_outside_rectangles_unchanged": true,
+      "private_original_preserved": true
+    },
+    {
+      "source_filename": "Screenshot 2026-10-05 204838.png",
+      "source_sha256": "6afb5dfcc66a87dbc2e2709f0672d90de0cd0ba289c5967c39a0d489380c4ec7",
+      "public_asset": "docs/devices/assets/PC-001/pc001-windows-update-status.png",
+      "public_sha256": "d0c52ef048579112fff5acaf9899b93f8d24207d225ae92055dbd1ef2a78cda0",
+      "public_bytes": 111833,
+      "original_and_public_dimensions": [
+        1192,
+        928
+      ],
+      "caption": "Windows Update displays You are up to date and Last checked Today, 8:48 PM. The filename dates this supplied screenshot October 5, 2026. This records the update result visible at that capture time, not an independent audit of all optional drivers, BIOS firmware, or future updates.",
+      "redacted_fields": [
+        "Local account name"
+      ],
+      "opaque_black_rectangles_xyxy": [
+        [
+          77,
+          66,
+          151,
+          86
+        ]
+      ],
+      "metadata_removed": true,
+      "resized": false,
+      "pixels_outside_rectangles_unchanged": true,
+      "private_original_preserved": true
+    },
+    {
+      "source_filename": "Screenshot 2026-10-05 204721.png",
+      "source_sha256": "65ec43d089865a0c70fd507ca2fd6671a4d944c4bdf49b5ca5f77774f023a966",
+      "public_asset": "docs/devices/assets/PC-001/pc001-windows-version-and-edition.png",
+      "public_sha256": "1d6e85fac7b2b045f8a769db46e0b591c015c05214edfae92c74398f87e6c3ce",
+      "public_bytes": 16702,
+      "original_and_public_dimensions": [
+        457,
+        417
+      ],
+      "caption": "About Windows shows Windows 11, Version 25H2, OS Build 26200.9550. The licensing paragraph explicitly identifies Windows 11 Pro. Licensed-to fields are permanently obscured. This screenshot records the displayed edition/version/build; Windows activation status is not shown.",
+      "redacted_fields": [
+        "Licensed-to local account and organization field"
+      ],
+      "opaque_black_rectangles_xyxy": [
+        [
+          61,
+          321,
+          134,
+          355
+        ]
+      ],
+      "metadata_removed": true,
+      "resized": false,
+      "pixels_outside_rectangles_unchanged": true,
+      "private_original_preserved": true
+    }
+  ],
+  "privacy": "Originals, source machine paths, and unrelated private material are excluded from the publication package.",
+  "validation": "Original dimensions preserved; every decoded pixel outside opaque black rectangles unchanged; publication PNG metadata empty. All eight source originals and final publication copies visually reviewed."
+}

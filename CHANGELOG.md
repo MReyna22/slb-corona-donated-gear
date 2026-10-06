@@ -2,6 +2,11 @@
 
 ## 2026-10-05
 
+- Published inventory revision 4 from the reconciled working sheet, updating only PC-001 verification fields while preserving earlier snapshots and other device records.
+
+- Archived eight sanitized PC-001 verification screenshots covering Windows 11 Pro 25H2 / build 26200.9550, the displayed current Windows Update result, Task Manager memory, basic Windows storage status, separate wired/Wi-Fi ping and DNS checks, and an example.com browser display.
+- Closed PC-001's Windows edition/update and Wi-Fi screenshot gaps. Recorded reassembly/startup as operator-confirmed; kept comprehensive storage diagnostics, remaining BIOS-photo recovery, and VM workload assessment pending. Adapter link rates are not throughput results, and the browser image alone does not establish its egress adapter.
+
 - Added the PC-002 device record and two sanitized internal-component photographs. Recorded two populated SO-DIMMs, the Seagate ST500LM021 500 GB / 7200 RPM SATA drive, Intel Dual Band Wireless-AC 7260 / 7260HMW label, cooling assembly, and coin cell. RAM capacity and startup/BIOS/OS/health/network tests remain pending; a DisplayPort cable was not available.
 - Published October 5 inventory revision 3 with PC-002's physical observations and pending DisplayPort connection; earlier snapshots remain unchanged.
 

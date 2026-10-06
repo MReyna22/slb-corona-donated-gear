@@ -3,8 +3,8 @@
 Hardware inventory and deployment documentation for my IT and cybersecurity home lab. This repository tracks equipment donated by Antonio Corona from initial identification through inspection, configuration, testing, and assignment to projects.
 
 **Maintainer:** [Misael Reyna](https://github.com/MReyna22)  
-**Status:** PC-001 initial setup complete by operator confirmation; GW-001 OpenWrt revival and basic validation completed; PC-002 physical inspection recorded, awaiting DisplayPort cable; remaining equipment pending  
-**Current inventory snapshot:** October 5, 2026 · revision 3 · 19 individual entries  
+**Status:** PC-001 initial setup and basic wired/Wi-Fi verification documented; GW-001 OpenWrt revival and basic validation completed; PC-002 physical inspection recorded, awaiting DisplayPort cable; remaining equipment pending  
+**Current inventory snapshot:** October 5, 2026 · revision 4 · 19 individual entries  
 **Original inventory baseline:** October 3, 2026
 
 ## Project purpose
@@ -17,10 +17,10 @@ This repository is the central inventory and donor acknowledgment. Technical imp
 
 | Document | What it contains |
 |---|---|
-| [Hardware inventory](inventory/2026-10-05-inventory-r3.csv) | Device IDs, models, power requirements, planned use, actual use, and test status |
+| [Hardware inventory](inventory/2026-10-05-inventory-r4.csv) | Device IDs, models, power requirements, planned use, actual use, and test status |
 | [Inventory maintenance](inventory/README.md) | Source limitations, stable IDs, and snapshot update process |
 | [GW-001 revival record](docs/devices/GW-001.md) | USG preservation, OpenWrt revival, validation results, and related project |
-| [PC-001 setup record](docs/devices/PC-001.md) | OptiPlex hardware, completed setup, retained network evidence, and remaining evidence gaps |
+| [PC-001 setup record](docs/devices/PC-001.md) | OptiPlex hardware, Windows setup, memory/storage status, and separate Ethernet/Wi-Fi checks |
 | [PC-002 inspection record](docs/devices/PC-002.md) | M93p internal components and photographed drive label; BIOS and functional checks awaiting DisplayPort cable |
 | [Equipment needs](docs/equipment-needs.md) | Supporting power and cabling requirements, current availability, and selection criteria |
 | [Project roadmap](docs/projects.md) | Candidate equipment, related repositories, dependencies, and next milestones |
@@ -35,12 +35,12 @@ The initial inventory contains four wireless access points, three switches, two 
 |---|---|---|
 | Identification and inventory | Initial baseline recorded | Dated inventory snapshot with 19 unique item IDs |
 | Physical inspection and power verification | PC-001 and PC-002 internal photographs documented; remaining inspections and power checks pending | Per-device condition, interfaces, accessories, and compatible power source |
-| Hardware and firmware assessment | PC-001 BIOS baseline recorded; Windows 11 updates current by operator confirmation; GW-001 USB/firmware assessment documented; remaining assessments pending | Installed specifications, firmware or BIOS versions, and management state |
+| Hardware and firmware assessment | PC-001 BIOS baseline recorded; Windows 11 Pro 25H2 and current Windows Update display captured; GW-001 USB/firmware assessment documented; remaining assessments pending | Installed specifications, firmware or BIOS versions, and management state |
 | Reset and configuration | PC-001 initial Windows setup complete by operator confirmation; GW-001 repurposed with OpenWrt; other equipment pending | Reset rationale, configuration decisions, and recovery information |
-| Functional validation | PC-001 wired reachability/DNS evidence retained; Wi-Fi operation confirmed by operator; GW-001 boot, LAN, routing, DNS, and browsing validated; remaining devices pending | Test procedure, expected result, observed result, and sanitized evidence |
+| Functional validation | PC-001 separate Ethernet/Wi-Fi ping and DNS checks documented; GW-001 boot, LAN, routing, DNS, and browsing validated; remaining devices pending | Test procedure, expected result, observed result, and sanitized evidence |
 | Project deployment | GW-001 revival completed with PC-001 as the wired test client; wider deployment pending | Confirmed item IDs, actual use, and links to implementation records |
 
-The October 3 baseline remains unchanged. The October 5 revision 3 snapshot adds PC-002's physical inspection and DisplayPort cable dependency to the earlier PC-001 and GW-001 progress. Two PC-001 BIOS photographs were recovered, permanently redacted, and published with captions; other BIOS settings remain documented from earlier transcriptions. Windows 11 setup/update completion and Wi-Fi functionality are operator-confirmed; screenshots do not yet cover those checks. Device records distinguish retained evidence from user reports and from future work.
+The October 3 baseline remains unchanged. The October 5 revision 4 snapshot records eight newly archived PC-001 screenshots: Windows 11 Pro 25H2 / build 26200.9550, the displayed current Windows Update result, recognized memory, basic Windows storage status, separate Ethernet/Wi-Fi ping and DNS checks, and a loaded example.com page. Both network tests returned four replies with zero loss. Link rates are not throughput measurements; Windows-reported disk health is not a comprehensive diagnostic. Earlier BIOS photographs, PC-002 inspection, and GW-001 results remain documented. Device records distinguish screenshots from operator reports and untested work.
 
 ## Related projects
 
