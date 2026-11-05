@@ -1,0 +1,80 @@
+{
+  "device_id": "PC-003",
+  "updated": "2026-11-04",
+  "scope": "Selected, sanitized operator-supplied evidence; captions distinguish test scope and unverified states.",
+  "privacy": "Unrelated private details fully removed. Relevant device identifier, when retained, exposes at most roughly the last quarter. Credentials, account details, network names, UUIDs, MACs, unique validation/result codes and identifying QR/barcodes are fully obscured or excluded.",
+  "images": [
+    {
+      "path": "docs/devices/assets/PC-003/pc003-diagnostics-pass-redacted.png",
+      "sha256": "ce2d87f43a8f81a53ab112873e4e51472e289147c8e0824bf1984d542d03a203",
+      "width": 770,
+      "height": 175,
+      "evidence_checkpoint": "2026-10-10",
+      "caption": "Dell diagnostics reported all tests passed. Scope/duration of the run not shown. Only final two service-tag characters remain; validation code and QR hidden or cropped."
+    },
+    {
+      "path": "docs/devices/assets/PC-003/pc003-data-wipe-success.png",
+      "sha256": "a3112f0122e9d54c5f0e868e67a9986e47094b90fb8bfc4393f39a5f70b8a5dd",
+      "width": 1152,
+      "height": 490,
+      "evidence_checkpoint": "2026-10-10",
+      "caption": "Dell Security Manager reported Data Wipe Completed Successfully; this is firmware-reported success."
+    },
+    {
+      "path": "docs/devices/assets/PC-003/pc003-windows-activation-redacted.png",
+      "sha256": "42c9dc7330c0b2e074cac570d830ed065535c7870fb52378f88558acd0546d20",
+      "width": 1195,
+      "height": 371,
+      "evidence_checkpoint": "2026-11-04",
+      "caption": "Windows 11 Home activation state Active; account details fully hidden."
+    },
+    {
+      "path": "docs/devices/assets/PC-003/pc003-windows-update-complete-redacted.png",
+      "sha256": "bea1f3fed8376f47e519d0eb3b1ba954fffae8f06181a28fc806490d6f15214c",
+      "width": 1193,
+      "height": 383,
+      "evidence_checkpoint": "2026-11-04",
+      "caption": "Windows Update reported You are up to date at capture; account details fully hidden."
+    },
+    {
+      "path": "docs/devices/assets/PC-003/pc003-wifi-adapter-detected.png",
+      "sha256": "7ae443ce101d0b9b18aad0362015c21de79599633b080fff6e2b590e4f787cf6",
+      "width": 780,
+      "height": 568,
+      "evidence_checkpoint": "2026-11-04",
+      "caption": "Device Manager lists Intel Wi-Fi 6E AX211, Realtek Ethernet and both graphics adapters. Listing is not a benchmark."
+    },
+    {
+      "path": "docs/devices/assets/PC-003/pc003-wifi-browser-test-redacted.png",
+      "sha256": "ca351253080ebe2d76909f193df2b56186c6b3c2644da44644ab7f1e4a7aac82",
+      "width": 1041,
+      "height": 838,
+      "evidence_checkpoint": "2026-11-04",
+      "caption": "Wi-Fi connection visible alongside loaded example.com page; operator reported browsing through Wi-Fi. Network name fully hidden."
+    },
+    {
+      "path": "docs/devices/assets/PC-003/pc003-intel-tile-code45.png",
+      "sha256": "e3b9bd8e139ef25079f28b429c44f7478cc1d9a2ec2bd1000f30eea05d05eb53",
+      "width": 392,
+      "height": 426,
+      "evidence_checkpoint": "2026-11-04",
+      "caption": "Intel Tile Device properties show Code 45, device not connected; no missing-driver or hardware-failure conclusion."
+    },
+    {
+      "path": "docs/devices/assets/PC-003/pc003-bios-overview-redacted.png",
+      "sha256": "208e64e47cf3cde2bd6a3d5208c790e54d8c43b880559cd3e3a323c34a316e1d",
+      "width": 1536,
+      "height": 1152,
+      "evidence_checkpoint": "2026-10-10",
+      "caption": "Initial BIOS overview: Core 7 150U and 32 GB DDR4 in two 16 GB modules. Service tag mostly hidden; express code and ownership date fully hidden. Firmware is the recorded baseline, not asserted latest."
+    },
+    {
+      "path": "docs/devices/assets/PC-003/pc003-bios-storage.png",
+      "sha256": "2de21dd4797bfe5f58672dccd97a696326bcf2a8187dc36d9200f897f0e23d15",
+      "width": 1152,
+      "height": 1315,
+      "evidence_checkpoint": "2026-10-10",
+      "caption": "Initial BIOS storage page identifies Solidigm P41PL NVMe 1024 GB; SMART reporting off was a baseline setting, not drive-health failure."
+    }
+  ]
+}

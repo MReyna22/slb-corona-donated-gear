@@ -1,5 +1,14 @@
 # Change log
 
+## 2026-11-04
+
+- Reconciled the working inventory and published a new dated snapshot for PC-002 and PC-003, preserving earlier snapshots and completed PC-001/GW-001 records.
+- Recorded PC-002 startup and BIOS access after the display connection became available: ThinkCentre M93p, i5-4590T, 8 GB at the displayed 1600 MHz memory bus speed, AHCI, BIOS FBKTB9AUS and baseline security/boot settings. TCG is Active; its specification version remains unverified.
+- Documented PC-002 CPU Quick (six subtests) and Memory Quick passes, plus five storage passes and one Not Applicable result. These selected tests do not establish a full surface scan or extended stability. Wipe authorization is recorded; erase, OS selection and reinstallation remain pending.
+- Added PC-003's device record: Core 7 150U, 32 GB DDR4, 1 TB-class Solidigm NVMe, Dell diagnostic pass, firmware-reported data wipe and clean Windows 11 Home setup/activation.
+- Recorded PC-003's current Windows Update display, Intel AX211 detection, Wi-Fi connection and operator-reported browsing. Intel Tile Device previously reported Code 45 (non-present), rather than a demonstrated missing-driver failure. Windows release/build, Ethernet internet/DNS evidence and OEM driver/firmware review remain pending.
+- Added sanitized evidence, captions and hashes. Updated active status summaries, inspection guidance and project milestones without treating proposed deployments as completed work.
+
 ## 2026-10-05
 
 - Published inventory revision 4 from the reconciled working sheet, updating only PC-001 verification fields while preserving earlier snapshots and other device records.
@@ -39,3 +48,4 @@
 - Linked the existing home network, Active Directory, and R36S repositories.
 - Added provisional Hermes plans and an inspection and deployment checklist.
 - Hardware testing and deployment remain pending.
+

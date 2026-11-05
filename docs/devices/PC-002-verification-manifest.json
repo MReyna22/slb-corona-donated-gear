@@ -1,0 +1,96 @@
+{
+  "device_id": "PC-002",
+  "updated": "2026-11-04",
+  "scope": "Selected, sanitized operator-supplied evidence; captions distinguish test scope and unverified states.",
+  "privacy": "Unrelated private details fully removed. Relevant device identifier, when retained, exposes at most roughly the last quarter. Credentials, account details, network names, UUIDs, MACs, unique validation/result codes and identifying QR/barcodes are fully obscured or excluded.",
+  "images": [
+    {
+      "path": "docs/devices/assets/PC-002/pc002-bios-system-summary.png",
+      "sha256": "0cac8a7bdd728f649d3bdcb58e40a16cfbcbe4a1a54026cad8e15d5102d74b07",
+      "width": 1080,
+      "height": 710,
+      "evidence_checkpoint": "2026-11-04",
+      "caption": "System Summary identifies Core i5-4590T, four cores, 8192 MB RAM and detected SATA drive."
+    },
+    {
+      "path": "docs/devices/assets/PC-002/pc002-bios-firmware-identity-redacted.png",
+      "sha256": "3b2fd5136b179d613a086f5309b0f50ae452aa3d240fdecf007b1c6fe831cfcc",
+      "width": 1070,
+      "height": 760,
+      "evidence_checkpoint": "2026-11-04",
+      "caption": "ThinkCentre M93p type/model and recorded firmware version/date. Only final two serial characters remain; UUID, MAC and license-status value hidden."
+    },
+    {
+      "path": "docs/devices/assets/PC-002/pc002-bios-cpu-settings.png",
+      "sha256": "6402d23ac66cc0c524e3e8629d8bee97861093386e1a57901d65610a8a9aa39a",
+      "width": 1070,
+      "height": 780,
+      "evidence_checkpoint": "2026-11-04",
+      "caption": "Baseline Intel Virtualization Technology and VT-d are disabled."
+    },
+    {
+      "path": "docs/devices/assets/PC-002/pc002-bios-ahci.png",
+      "sha256": "7c38ec1852415e29ca2c79e941ceca3f78e3b5d8b63edc6a9a5e508188740579",
+      "width": 1035,
+      "height": 845,
+      "evidence_checkpoint": "2026-11-04",
+      "caption": "SATA controller enabled and configured as AHCI."
+    },
+    {
+      "path": "docs/devices/assets/PC-002/pc002-bios-secure-boot.png",
+      "sha256": "d8e1ffd1d9b7041c6a517dcbcfdc5f473994f90f6188982b9674c25f337e4b9a",
+      "width": 1015,
+      "height": 878,
+      "evidence_checkpoint": "2026-11-04",
+      "caption": "Secure Boot disabled; status Setup Mode at baseline."
+    },
+    {
+      "path": "docs/devices/assets/PC-002/pc002-bios-tcg-active.png",
+      "sha256": "98bf7404ffe0bef0a47db0df028a2df2b9559f28ab1ebbc522966555af5fd4e6",
+      "width": 1020,
+      "height": 950,
+      "evidence_checkpoint": "2026-11-04",
+      "caption": "TCG Security Feature Active; clear set to NO. TPM specification version is not shown."
+    },
+    {
+      "path": "docs/devices/assets/PC-002/pc002-bios-primary-boot.png",
+      "sha256": "e3018e4fcccc3048f6bf91e2521012ee22949b54eeece879c498dbb65cf2c490",
+      "width": 985,
+      "height": 1000,
+      "evidence_checkpoint": "2026-11-04",
+      "caption": "Primary boot order includes USB entries and the installed drive."
+    },
+    {
+      "path": "docs/devices/assets/PC-002/pc002-diagnostics-home.png",
+      "sha256": "062de1d96dae1989ec06164ddbc7ae1c1a4a55d5dfe0a8ca3d2210bb9bfbda28",
+      "width": 1080,
+      "height": 655,
+      "evidence_checkpoint": "2026-11-04",
+      "caption": "Lenovo Diagnostics 02.08.01 Home menu; opening the tool is not a test pass."
+    },
+    {
+      "path": "docs/devices/assets/PC-002/pc002-cpu-quick-pass.png",
+      "sha256": "907907189bc157ec50ecfefe72d96bd198aba688a4d2d5e2a56649aeb4b8d2c0",
+      "width": 1065,
+      "height": 620,
+      "evidence_checkpoint": "2026-11-04",
+      "caption": "CPU Quick: all six displayed subtests passed; elapsed 29 seconds. Result code fully hidden."
+    },
+    {
+      "path": "docs/devices/assets/PC-002/pc002-memory-quick-pass.png",
+      "sha256": "0e9afbfea72aa901a0a8225d588e00122ed9a080ef248d33868a2c73d0976b4e",
+      "width": 1031,
+      "height": 590,
+      "evidence_checkpoint": "2026-11-04",
+      "caption": "Memory Quick random pattern test passed; 8192 MB total; elapsed 1 minute 24 seconds. Result code fully hidden."
+    },
+    {
+      "path": "docs/devices/assets/PC-002/pc002-storage-tests-results.png",
+      "sha256": "dc87710566c949bd033fc7b4828b6f32ebfd53d3b1f323e5249df292578109dc",
+      "width": 1080,
+      "height": 610,
+      "evidence_checkpoint": "2026-11-04",
+      "caption": "Storage: SMART status, SMART short, random seek, funnel seek and targeted read passed; drive self-test not applicable. Result code hidden."
+    }
+  ]
+}

@@ -1,15 +1,15 @@
 # Project roadmap
 
-This roadmap separates completed work from planned uses of the donated equipment. Last reconciled October 5, 2026.
+This roadmap separates completed work from planned uses of the donated equipment. Last reconciled November 4, 2026.
 
 | Project | Related repository | Candidate gear | Next milestone |
 |---|---|---|---|
 | Home network expansion | [secure-home-network-lab](https://github.com/MReyna22/secure-home-network-lab) | AP-001–004, SW-001–003, compatible power equipment; GW-001 for possible isolated lab use | Verify power, test equipment, and document a proposed topology |
 | Active Directory lab | [AD_HL_1](https://github.com/MReyna22/AD_HL_1) | PC-001 as a candidate VM host; PC-002 for possible supporting services | PC-001 initial setup complete by operator confirmation; assess capacity and plan VMs before deployment |
 | R36S toolkit | [R36S-Lite-Cyberdeck](https://github.com/MReyna22/R36S-Lite-Cyberdeck) | The donated lab network as a controlled test environment | Recheck diagnostics and report exports against lab devices |
-| Local AI agents using Hermes | Repository not created | PC-003 as a candidate local AI workstation; spare mini PC capacity for supporting services | Inspect RAM and graphics, establish local inference, and test one agent workflow |
+| Local AI agents using Hermes | Repository not created | PC-003 as a candidate workstation; spare mini PC capacity for supporting services | Hardware and clean Windows setup progress documented; complete final PC-003 checks before evaluating inference feasibility or an agent workflow |
 | USG Revival / OpenWrt | [USG-Revival](https://github.com/MReyna22/USG-Revival) | GW-001 and PWR-004; PC-001 as wired test client | Revival and basic routing/DNS/browsing validation complete; wider deployment remains separate |
-| Gear inspection and deployment | Tracked in this repository | All 19 inventory entries | Document baseline condition, tests, required resets, setup, and configuration |
+| Gear inspection and deployment | Tracked in this repository | All 19 inventory entries | PC-002 BIOS and selected diagnostics documented; authorized erase/OS setup pending. PC-003 clean Windows setup/activation/update and basic Wi-Fi browsing documented; final verification pending |
 
 The R36S itself is an existing project device and is not part of the 19-item donation inventory.
 
@@ -25,7 +25,7 @@ Planned learning areas include firewall rules, NAT, DHCP, DNS, VLAN isolation, V
 
 ## Work order
 
-1. Complete PC-001's remaining Windows/Wi-Fi and BIOS-view evidence after publishing the two recovered BIOS photographs, then assess its VM capacity; inspect the remaining computers and verify compatible power sources for network gear.
+1. Retain PC-001's completed initial Windows and wired/Wi-Fi checks. Complete PC-002's supported-OS selection, authorized erase and installation; close PC-003's Windows release/build, Ethernet test and OEM driver/firmware review. Keep extended testing separate from basic inspection milestones.
 2. Build on the validated GW-001 / PC-001 wired test setup and plan a small lab network using tested equipment.
 3. Advance Active Directory and R36S testing.
 4. Pilot local inference and one useful Hermes agent workflow.
@@ -48,3 +48,4 @@ When a project uses donated equipment:
 > This project uses equipment donated by Antonio Corona. The donation inventory and acknowledgment are maintained in [SLB Corona Donated Gear](https://github.com/MReyna22/slb-corona-donated-gear). Equipment used: list the confirmed item IDs.
 
 Replace the final sentence with the actual item IDs before publishing it in a project.
+
