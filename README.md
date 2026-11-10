@@ -3,13 +3,13 @@
 Hardware inventory and deployment documentation for my IT and cybersecurity home lab. This repository tracks equipment donated by Antonio Corona from initial identification through inspection, configuration, testing, and assignment to projects.
 
 **Maintainer:** [Misael Reyna](https://github.com/MReyna22)  
-**Status:** PC-001 and USG setup milestones documented; PC-002 BIOS/selected tests documented, reset pending; PC-003 Windows setup and basic Wi-Fi browsing documented, final checks pending  
-**Current inventory snapshot:** November 4, 2026 · 19 individual entries  
+**Status:** PC-001 and USG milestones documented; PC-002 erase/OS setup pending; PC-003 Ubuntu and Hermes setup complete, application validation pending  
+**Current inventory snapshot:** November 10, 2026 · 19 individual entries  
 **Original inventory baseline:** October 3, 2026
 
 ## Project purpose
 
-My goal is to turn this equipment into a documented lab for networking, systems administration, cybersecurity, and local AI experimentation. The records here will connect each device to its requirements, configuration decisions, test results, and actual use.
+My goal is to turn this equipment into a documented lab for networking, systems administration, cybersecurity, and AI-assisted automation. The records here will connect each device to its requirements, configuration decisions, test results, and actual use.
 
 This repository is the central inventory and donor acknowledgment. Technical implementation and results belong in the related project repositories, with links back to the equipment records.
 
@@ -17,12 +17,12 @@ This repository is the central inventory and donor acknowledgment. Technical imp
 
 | Document | What it contains |
 |---|---|
-| [Hardware inventory](inventory/2026-11-04-inventory.csv) | Device IDs, models, power requirements, planned use, actual use, and test status |
+| [Hardware inventory](inventory/2026-11-10-inventory.csv) | Device IDs, models, power requirements, planned use, actual use, and test status |
 | [Inventory maintenance](inventory/README.md) | Source limitations, stable IDs, and snapshot update process |
 | [GW-001 revival record](docs/devices/GW-001.md) | USG preservation, OpenWrt revival, validation results, and related project |
 | [PC-001 setup record](docs/devices/PC-001.md) | OptiPlex hardware, Windows setup, memory/storage status, and separate Ethernet/Wi-Fi checks |
 | [PC-002 inspection record](docs/devices/PC-002.md) | M93p hardware, BIOS baseline, CPU/memory quick-test and storage results; authorized reset remains pending |
-| [PC-003 setup record](docs/devices/PC-003.md) | Inspiron all-in-one diagnostics, reported firmware wipe, Windows installation/activation/update and Wi-Fi evidence; final checks remain open |
+| [PC-003 setup record](docs/devices/PC-003.md) | Current Ubuntu/LUKS, NVIDIA and Hermes milestones, open application checks, and historical Windows recovery evidence |
 | [Equipment needs](docs/equipment-needs.md) | Power, display and cabling readiness with remaining technical checks |
 | [Project roadmap](docs/projects.md) | Candidate equipment, related repositories, dependencies, and next milestones |
 | [Inspection and deployment](docs/inspection-and-deployment.md) | Baseline checks, reset decisions, configuration records, and validation requirements |
@@ -37,13 +37,15 @@ The initial inventory contains four wireless access points, three switches, two 
 | Identification and inventory | Initial baseline recorded | Dated inventory snapshot with 19 unique item IDs |
 | Physical inspection and power verification | PC-001 and PC-002 internal photographs documented; remaining inspections and power checks pending | Per-device condition, interfaces, accessories, and compatible power source |
 | Hardware and firmware assessment | PC-001 BIOS baseline recorded; PC-002 BIOS and selected diagnostics documented; PC-003 hardware, BIOS baseline and Dell diagnostic pass recorded; GW-001 USB/firmware assessment documented | Installed specifications, firmware or BIOS versions, and management state |
-| Reset and configuration | PC-001 initial Windows setup complete by operator confirmation; PC-003 Dell-reported wipe and clean Windows 11 Home setup/activation documented; PC-002 erase authorized but not performed; GW-001 repurposed with OpenWrt | Reset rationale, configuration decisions, and recovery information |
-| Functional validation | PC-001 separate Ethernet/Wi-Fi ping and DNS checks documented; PC-002 selected CPU/memory/storage tests passed with one storage test Not Applicable; PC-003 Wi-Fi connection and operator-reported browsing documented; GW-001 boot, LAN, routing, DNS and browsing validated | Test procedure, expected result, observed result, and sanitized evidence |
-| Project deployment | GW-001 revival completed with PC-001 as the wired test client; wider deployment pending | Confirmed item IDs, actual use, and links to implementation records |
+| Reset and configuration | PC-001 initial Windows setup complete by operator confirmation; PC-003 now runs Ubuntu on an encrypted internal SSD with Hermes setup complete; PC-002 erase authorized but not performed; GW-001 repurposed with OpenWrt | Reset rationale, configuration decisions, and recovery information |
+| Functional validation | PC-001 separate Ethernet/Wi-Fi ping and DNS checks documented; PC-002 selected CPU/memory/storage tests passed with one storage test Not Applicable; PC-003 Linux root/LUKS, NVIDIA and zero-failed-system-unit checks documented; first Hermes response/tool validation pending; GW-001 boot, LAN, routing, DNS and browsing validated | Test procedure, expected result, observed result, and sanitized evidence |
+| Project deployment | GW-001 revival completed with PC-001 as the wired test client; PC-003 Ubuntu/Hermes setup underway; Checkmk, Obsidian and wider network deployment pending | Confirmed item IDs, actual use, and links to implementation records |
 
 The November 4 snapshot adds PC-002's i5-4590T / 8 GB BIOS baseline and selected CPU, memory and storage results. Five storage checks passed and one was Not Applicable. Its authorized erase and fresh OS setup remain pending.
 
-PC-003 now has a [setup record](docs/devices/PC-003.md) covering its Core 7 150U / 32 GB / 1 TB-class NVMe hardware, Dell-reported wipe, clean Windows 11 Home installation, activation, current Update display and basic Wi-Fi browsing evidence. Installed Windows release/build, separate Ethernet internet/DNS evidence and Dell driver/firmware review remain open. The device pages explain test scope and distinguish screenshots from operator reports. Earlier snapshots remain unchanged.
+PC-003's [setup record](docs/devices/PC-003.md) now covers Ubuntu Desktop 26.04.1 LTS on its internal LUKS/LVM-encrypted NVMe, a working NVIDIA driver with 2048 MiB VRAM, and Hermes setup completion. Updates/reboot and the device-code sign-in fix are operator-reported. The selected Codex model, first response and scoped tool operation remain unverified; Checkmk, Obsidian, remote access, suspend settings and firmware maintenance remain open. Earlier Windows recovery evidence is retained as history.
+
+The November 10 snapshot also records that PC-001 and PC-002's joint infrastructure roles remain undecided. Neither a two-node cluster nor an SDN design has been deployed.
 
 ## Related projects
 
@@ -53,9 +55,9 @@ PC-003 now has a [setup record](docs/devices/PC-003.md) covering its Core 7 150U
 | [Home network lab](https://github.com/MReyna22/secure-home-network-lab) | Managed switching, wireless access, and a possible isolated gateway |
 | [Active Directory lab](https://github.com/MReyna22/AD_HL_1) | Candidate virtualization and supporting infrastructure hosts |
 | [R36S Lite Cyberdeck](https://github.com/MReyna22/R36S-Lite-Cyberdeck) | A controlled network for diagnostics and report validation |
-| Local AI agents using Hermes | A candidate workstation for an initial agent workflow; feasibility depends on hardware inspection |
+| Hermes and lab services | PC-003 Ubuntu/Hermes setup complete; remote Codex response/tool validation pending; Checkmk and Obsidian planned |
 
-See the [project roadmap](docs/projects.md) for equipment assignments and next milestones. USG Revival records a completed implementation. The other assignments remain proposed until tested.
+See the [project roadmap](docs/projects.md) for equipment assignments and next milestones. USG Revival records a completed implementation. Other network and VM assignments remain proposed until tested. PC-003's installation milestones are recorded separately from service readiness.
 
 ## Equipment overview
 

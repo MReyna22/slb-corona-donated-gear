@@ -2,13 +2,13 @@
 
 Use one record per item ID. Start by observing and documenting the device. Decide on a reset after recording the baseline and any configuration that needs to be preserved.
 
-## Current checkpoints — November 4, 2026
+## Current checkpoints — November 10, 2026
 
 | Device | Verified or documented | Remaining before next setup/deployment milestone |
 |---|---|---|
 | PC-001 | Initial Windows setup and separate Ethernet/Wi-Fi basic checks | Workload planning and any explicitly selected extended checks |
 | PC-002 | Startup/BIOS access, hardware baseline, CPU and memory quick passes, five storage passes / one Not Applicable | Supported OS selection, authorized erase, installation and networking checks |
-| PC-003 | Dell-reported diagnostic pass and data wipe; Windows 11 Home setup/activation, current Update display and basic Wi-Fi browsing evidence | Windows release/build, separate Ethernet internet/DNS test, OEM driver/firmware review and final signoff |
+| PC-003 | Ubuntu installed on encrypted internal NVMe; NVIDIA driver/VRAM and zero failed system units recorded; Hermes setup complete; Windows recovery retained as history | Hermes provider/model, first response and tool validation; suspend/remote access; Checkmk/Obsidian; firmware and Linux network/peripheral checks |
 | GW-001 | OpenWrt revival and basic wired validation | Wider deployment remains a separate project milestone |
 
 A diagnostic pass applies only to the shown test selections. A firmware-reported successful wipe is recorded as that result, not independent forensic validation. A Windows Update success display does not establish the latest OEM BIOS or every driver version. A detected network adapter is not itself a network functionality test.

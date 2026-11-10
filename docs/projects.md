@@ -1,15 +1,15 @@
 # Project roadmap
 
-This roadmap separates completed work from planned uses of the donated equipment. Last reconciled November 4, 2026.
+This roadmap separates completed work from planned uses of the donated equipment. Last reconciled November 10, 2026.
 
 | Project | Related repository | Candidate gear | Next milestone |
 |---|---|---|---|
 | Home network expansion | [secure-home-network-lab](https://github.com/MReyna22/secure-home-network-lab) | AP-001–004, SW-001–003, compatible power equipment; GW-001 for possible isolated lab use | Verify power, test equipment, and document a proposed topology |
 | Active Directory lab | [AD_HL_1](https://github.com/MReyna22/AD_HL_1) | PC-001 as a candidate VM host; PC-002 for possible supporting services | PC-001 initial setup complete by operator confirmation; assess capacity and plan VMs before deployment |
 | R36S toolkit | [R36S-Lite-Cyberdeck](https://github.com/MReyna22/R36S-Lite-Cyberdeck) | The donated lab network as a controlled test environment | Recheck diagnostics and report exports against lab devices |
-| Local AI agents using Hermes | Repository not created | PC-003 as a candidate workstation; spare mini PC capacity for supporting services | Hardware and clean Windows setup progress documented; complete final PC-003 checks before evaluating inference feasibility or an agent workflow |
+| Hermes and lab services | [PC-003 record](devices/PC-003.md) in this repository | PC-003: Ubuntu, Hermes with remote Codex provider; Checkmk and Obsidian planned | Ubuntu/LUKS and NVIDIA checks recorded; Hermes setup complete. Confirm provider/model, first response and scoped tool use before service-readiness claims |
 | USG Revival / OpenWrt | [USG-Revival](https://github.com/MReyna22/USG-Revival) | GW-001 and PWR-004; PC-001 as wired test client | Revival and basic routing/DNS/browsing validation complete; wider deployment remains separate |
-| Gear inspection and deployment | Tracked in this repository | All 19 inventory entries | PC-002 BIOS and selected diagnostics documented; authorized erase/OS setup pending. PC-003 clean Windows setup/activation/update and basic Wi-Fi browsing documented; final verification pending |
+| Gear inspection and deployment | Tracked in this repository | All 19 inventory entries | PC-002 BIOS and selected diagnostics documented; authorized erase/OS setup pending. PC-003 Ubuntu installed on encrypted internal SSD; Hermes setup complete; application, network/peripheral and firmware validation pending |
 
 The R36S itself is an existing project device and is not part of the 19-item donation inventory.
 
@@ -23,12 +23,16 @@ PC-001 served as the wired LAN client. Retained evidence shows a 1 GbE LAN link,
 
 Planned learning areas include firewall rules, NAT, DHCP, DNS, VLAN isolation, VPN access, logging, and assessment of IDS/IPS feasibility. These are project goals, not completed capabilities. pfSense/OPNsense is no longer the planned route, so PC-001 and PC-002 remain available for other lab roles. The household router remains the upstream router. GW-001's validated test setup does not establish that it has replaced the household gateway.
 
+## Device roles under evaluation
+
+PC-003 has its own Ubuntu AI/services role. PC-001 and PC-002 are being considered together for either a lightweight application cluster or an SDN/controller lab. No final mini-PC architecture, replacement OS decision or deployment is established. These alternatives remain plans; their proposed services are not recorded as actual use.
+
 ## Work order
 
-1. Retain PC-001's completed initial Windows and wired/Wi-Fi checks. Complete PC-002's supported-OS selection, authorized erase and installation; close PC-003's Windows release/build, Ethernet test and OEM driver/firmware review. Keep extended testing separate from basic inspection milestones.
+1. Retain PC-001's completed initial Windows and wired/Wi-Fi checks. Select PC-001/PC-002 roles before PC-002's authorized erase and OS installation. Resume PC-003 at Hermes provider/model, first response and scoped tool validation; then finish Checkmk, Obsidian, uptime/remote-access and firmware work. Keep extended testing separate from setup milestones.
 2. Build on the validated GW-001 / PC-001 wired test setup and plan a small lab network using tested equipment.
 3. Advance Active Directory and R36S testing.
-4. Pilot local inference and one useful Hermes agent workflow.
+4. Validate one useful Hermes workflow using the selected remote Codex provider. Local inference is not selected for this phase.
 5. Record actual deployments and expand from tested results.
 
 ## Referencing the donation

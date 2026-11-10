@@ -1,5 +1,14 @@
 # Change log
 
+## 2026-11-10
+
+- Reconciled current PC-003 progress and the working inventory; added a new dated 19-item snapshot without changing historical snapshots.
+- Recorded Ubuntu Desktop 26.04.1 LTS installed on the internal NVMe with LUKS/LVM; retained the missing installer disk-selection photo as an evidence gap and used post-install root/disk output for validation.
+- Recorded NVIDIA MX570 A driver 595.99.02 responding with 2048 MiB VRAM and zero failed system units at capture. Updates and reboot remain operator-reported.
+- Recorded Hermes Setup Complete, the operator-reported device-code permission fix, and 8/10 available tool categories. Provider/model, first response and scoped tool use remain unverified; Web Search & Extract and GitHub Skills Hub are unconfigured.
+- Replaced obsolete current-Windows and local-inference plans with the selected Ubuntu/remote-Codex direction. Preserved Windows recovery history and existing public images. Checkmk, Obsidian, uptime/remote access, Linux network/peripheral validation and BIOS maintenance remain open.
+- Kept PC-001/PC-002 cluster and SDN alternatives explicitly undecided and unimplemented. Reviewed newer screenshots privately and published text summaries without account names, private paths, credentials or raw screenshots.
+
 ## 2026-11-04
 
 - Reconciled the working inventory and published a new dated snapshot for PC-002 and PC-003, preserving earlier snapshots and completed PC-001/GW-001 records.

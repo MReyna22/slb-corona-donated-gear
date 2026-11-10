@@ -2,7 +2,7 @@
 
 The Google Sheet is the working inventory. These CSV files are dated public snapshots so changes can be reviewed in Git.
 
-The current snapshot is [2026-11-04-inventory.csv](2026-11-04-inventory.csv), reconciled from the working sheet on November 4, 2026. It records PC-002's BIOS baseline and selected diagnostic passes, plus PC-003's hardware, wipe/reinstall, Windows activation/update and basic Wi-Fi browsing evidence. It preserves the earlier PC-001/GW-001 work and other device records. There are 19 unique item IDs. Earlier snapshots remain unchanged.
+The current snapshot is [2026-11-10-inventory.csv](2026-11-10-inventory.csv), reconciled from the working sheet on November 10, 2026. It records PC-003's Ubuntu installation on encrypted internal storage, NVIDIA and system-unit checks, Hermes setup completion and remaining application validation. PC-001/PC-002 joint roles remain undecided. It preserves the earlier PC-001/GW-001 work and other device records. There are 19 unique item IDs. Earlier snapshots remain unchanged.
 
 The initial snapshot contains 19 entries, one row per physical device or inventoried cable. Item IDs stay the same when equipment moves or changes purpose.
 
@@ -27,7 +27,7 @@ GW-001 revival and basic bench validation are complete. Throughput, sustained st
 
 PC-002's [device record](../docs/devices/PC-002.md) now documents the i5-4590T, BIOS-recognized 8192 MB / displayed 1600 MHz memory bus speed, BIOS FBKTB9AUS and baseline settings. CPU Quick and Memory Quick passed. The selected storage suite shows five passes and one Not Applicable result. These are not extended memory/stability tests or a full disk surface scan. Wipe authorization is recorded; erase, fresh OS setup and networking tests remain pending.
 
-PC-003's [device record](../docs/devices/PC-003.md) documents Core 7 150U / 32 GB DDR4 / Solidigm 1024 GB NVMe hardware, Dell-reported diagnostic and Data Wipe successes, clean Windows 11 Home setup/activation and Windows Update reporting up to date. AX211 Wi-Fi detection, connection and a loaded webpage are photographed; browsing through Wi-Fi is operator-reported. The screenshot does not independently isolate network egress. Installed Windows release/build, a separate Ethernet internet/DNS test and OEM driver/firmware review remain open. Intel Tile Device previously reported Code 45 (non-present), not a confirmed missing-driver failure.
+PC-003's [device record](../docs/devices/PC-003.md) now separates the current Ubuntu/Hermes setup from earlier Windows recovery. Internal-root/LUKS and NVIDIA output, plus a zero-failed-system-unit result, were reviewed privately. Updates/reboot and resolution of the device-code permission error are operator-reported. Hermes reports setup complete and 8/10 tool categories available; its selected provider/model, first response and tool execution remain unverified. Checkmk, Obsidian, remote access, suspend settings, firmware maintenance and remaining Linux network/peripheral checks are open. No local-model runtime was selected. The new originals remain private; the public record contains reviewed summaries.
 
 Power ratings and adapter associations remain inventory observations. Successful startup does not revalidate every power-label association. Other device rows retain their earlier status; proposed lab roles remain separate from actual inspection/setup use.
 
