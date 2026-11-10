@@ -1,5 +1,14 @@
 # Change log
 
+## 2026-11-10 — revision 2: Hermes operation
+
+- Reconciled the six other project chats and newer Hermes screenshots; added `inventory/2026-11-10-inventory-r2.csv` while preserving the earlier same-day snapshot.
+- Replaced superseded first-response/tool-pending status with verified local responses, hostname/pwd execution and project-file reads from the dedicated lab workspace. The default profile displays `gpt-6-sol`; exact provider identity remains unshown.
+- Recorded the local launch-directory mismatch and successful fresh-session correction, personalization/file presence, active/enabled gateway, Telegram polling connection and enabled linger. Telegram usability is operator-reported; fresh Telegram workspace behavior and logout/reboot recovery remain untested.
+- Recorded Hermes's report that it corrected project notes and added a lab entry, without claiming independent inspection of the full edited files.
+- Set Checkmk and Obsidian as the next build work and deferred optional Hermes tuning. No new switch or AP implementation was reported.
+- Published sanitized text summaries only. Raw screenshots, usernames/home paths, configuration contents, bot/account identifiers and credentials remain private.
+
 ## 2026-11-10
 
 - Reconciled current PC-003 progress and the working inventory; added a new dated 19-item snapshot without changing historical snapshots.

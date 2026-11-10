@@ -3,7 +3,7 @@
 Hardware inventory and deployment documentation for my IT and cybersecurity home lab. This repository tracks equipment donated by Antonio Corona from initial identification through inspection, configuration, testing, and assignment to projects.
 
 **Maintainer:** [Misael Reyna](https://github.com/MReyna22)  
-**Status:** PC-001 and USG milestones documented; PC-002 erase/OS setup pending; PC-003 Ubuntu and Hermes setup complete, application validation pending  
+**Status:** PC-001 and USG milestones documented; PC-002 erase/OS setup pending; PC-003 Ubuntu and local Hermes operation verified; Checkmk and Obsidian next  
 **Current inventory snapshot:** November 10, 2026 · 19 individual entries  
 **Original inventory baseline:** October 3, 2026
 
@@ -17,7 +17,7 @@ This repository is the central inventory and donor acknowledgment. Technical imp
 
 | Document | What it contains |
 |---|---|
-| [Hardware inventory](inventory/2026-11-10-inventory.csv) | Device IDs, models, power requirements, planned use, actual use, and test status |
+| [Hardware inventory](inventory/2026-11-10-inventory-r2.csv) | Device IDs, models, power requirements, planned use, actual use, and test status |
 | [Inventory maintenance](inventory/README.md) | Source limitations, stable IDs, and snapshot update process |
 | [GW-001 revival record](docs/devices/GW-001.md) | USG preservation, OpenWrt revival, validation results, and related project |
 | [PC-001 setup record](docs/devices/PC-001.md) | OptiPlex hardware, Windows setup, memory/storage status, and separate Ethernet/Wi-Fi checks |
@@ -38,14 +38,14 @@ The initial inventory contains four wireless access points, three switches, two 
 | Physical inspection and power verification | PC-001 and PC-002 internal photographs documented; remaining inspections and power checks pending | Per-device condition, interfaces, accessories, and compatible power source |
 | Hardware and firmware assessment | PC-001 BIOS baseline recorded; PC-002 BIOS and selected diagnostics documented; PC-003 hardware, BIOS baseline and Dell diagnostic pass recorded; GW-001 USB/firmware assessment documented | Installed specifications, firmware or BIOS versions, and management state |
 | Reset and configuration | PC-001 initial Windows setup complete by operator confirmation; PC-003 now runs Ubuntu on an encrypted internal SSD with Hermes setup complete; PC-002 erase authorized but not performed; GW-001 repurposed with OpenWrt | Reset rationale, configuration decisions, and recovery information |
-| Functional validation | PC-001 separate Ethernet/Wi-Fi ping and DNS checks documented; PC-002 selected CPU/memory/storage tests passed with one storage test Not Applicable; PC-003 Linux root/LUKS, NVIDIA and zero-failed-system-unit checks documented; first Hermes response/tool validation pending; GW-001 boot, LAN, routing, DNS and browsing validated | Test procedure, expected result, observed result, and sanitized evidence |
-| Project deployment | GW-001 revival completed with PC-001 as the wired test client; PC-003 Ubuntu/Hermes setup underway; Checkmk, Obsidian and wider network deployment pending | Confirmed item IDs, actual use, and links to implementation records |
+| Functional validation | PC-001 separate Ethernet/Wi-Fi ping and DNS checks documented; PC-002 selected CPU/memory/storage tests passed with one storage test Not Applicable; PC-003 Linux root/LUKS, NVIDIA and zero-failed-system-unit checks documented; Hermes local response, command and project-file reads verified; GW-001 boot, LAN, routing, DNS and browsing validated | Test procedure, expected result, observed result, and sanitized evidence |
+| Project deployment | GW-001 revival completed with PC-001 as the wired test client; PC-003 Ubuntu/Hermes local baseline complete; Checkmk, Obsidian and wider network deployment pending | Confirmed item IDs, actual use, and links to implementation records |
 
 The November 4 snapshot adds PC-002's i5-4590T / 8 GB BIOS baseline and selected CPU, memory and storage results. Five storage checks passed and one was Not Applicable. Its authorized erase and fresh OS setup remain pending.
 
-PC-003's [setup record](docs/devices/PC-003.md) now covers Ubuntu Desktop 26.04.1 LTS on its internal LUKS/LVM-encrypted NVMe, a working NVIDIA driver with 2048 MiB VRAM, and Hermes setup completion. Updates/reboot and the device-code sign-in fix are operator-reported. The selected Codex model, first response and scoped tool operation remain unverified; Checkmk, Obsidian, remote access, suspend settings and firmware maintenance remain open. Earlier Windows recovery evidence is retained as history.
+PC-003's [setup record](docs/devices/PC-003.md) now covers Ubuntu Desktop 26.04.1 LTS on its internal LUKS/LVM-encrypted NVMe, a working NVIDIA driver with 2048 MiB VRAM, and Hermes setup completion. Updates/reboot and the device-code sign-in fix are operator-reported. The default Hermes profile displays `gpt-6-sol`; local responses, command execution and project-file reads are verified. The gateway is active/enabled and connected to Telegram, which the operator reports usable. Exact provider identity, fresh Telegram workspace loading and full contents of agent-reported note edits remain unverified. Checkmk and Obsidian are next; separate host remote access, suspend settings and firmware maintenance remain open. Earlier Windows recovery evidence is retained as history.
 
-The November 10 snapshot also records that PC-001 and PC-002's joint infrastructure roles remain undecided. Neither a two-node cluster nor an SDN design has been deployed.
+The November 10 revision 2 snapshot adds the newer Hermes results and also records that PC-001 and PC-002's joint infrastructure roles remain undecided. Neither a two-node cluster nor an SDN design has been deployed.
 
 ## Related projects
 
@@ -55,7 +55,7 @@ The November 10 snapshot also records that PC-001 and PC-002's joint infrastruct
 | [Home network lab](https://github.com/MReyna22/secure-home-network-lab) | Managed switching, wireless access, and a possible isolated gateway |
 | [Active Directory lab](https://github.com/MReyna22/AD_HL_1) | Candidate virtualization and supporting infrastructure hosts |
 | [R36S Lite Cyberdeck](https://github.com/MReyna22/R36S-Lite-Cyberdeck) | A controlled network for diagnostics and report validation |
-| Hermes and lab services | PC-003 Ubuntu/Hermes setup complete; remote Codex response/tool validation pending; Checkmk and Obsidian planned |
+| Hermes and lab services | PC-003 local Hermes response and workspace/file-tool checks passed; Telegram gateway connected; Checkmk and Obsidian next |
 
 See the [project roadmap](docs/projects.md) for equipment assignments and next milestones. USG Revival records a completed implementation. Other network and VM assignments remain proposed until tested. PC-003's installation milestones are recorded separately from service readiness.
 

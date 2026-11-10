@@ -8,7 +8,7 @@ Use one record per item ID. Start by observing and documenting the device. Decid
 |---|---|---|
 | PC-001 | Initial Windows setup and separate Ethernet/Wi-Fi basic checks | Workload planning and any explicitly selected extended checks |
 | PC-002 | Startup/BIOS access, hardware baseline, CPU and memory quick passes, five storage passes / one Not Applicable | Supported OS selection, authorized erase, installation and networking checks |
-| PC-003 | Ubuntu installed on encrypted internal NVMe; NVIDIA driver/VRAM and zero failed system units recorded; Hermes setup complete; Windows recovery retained as history | Hermes provider/model, first response and tool validation; suspend/remote access; Checkmk/Obsidian; firmware and Linux network/peripheral checks |
+| PC-003 | Ubuntu on encrypted internal NVMe; NVIDIA/system-unit checks; local Hermes responses, commands and project-file reads verified; Telegram gateway connected; Windows recovery retained as history | Checkmk and Obsidian next; suspend/separate host remote access, firmware and Linux network/peripheral checks. Fresh Telegram workspace and exact provider are separate limits |
 | GW-001 | OpenWrt revival and basic wired validation | Wider deployment remains a separate project milestone |
 
 A diagnostic pass applies only to the shown test selections. A firmware-reported successful wipe is recorded as that result, not independent forensic validation. A Windows Update success display does not establish the latest OEM BIOS or every driver version. A detected network adapter is not itself a network functionality test.
